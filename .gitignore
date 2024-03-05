@@ -5,3 +5,7 @@
 # Misc
 .DS_Store
 **/*/.DS_Store
+
+# Build
+.build
+node_modules
