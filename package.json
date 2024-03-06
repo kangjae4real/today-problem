@@ -7,7 +7,7 @@
   "author": "Kangjae Choi <awpe89@gmail.com>",
   "scripts": {
     "build": "tsc",
-    "start": "tsc && node .build/src/index.js",
+    "start": "node --no-warnings=ExperimentalWarning --loader ts-node/esm ./src/index.ts",
     "dev": "nodemon -c ./nodemon.json"
   },
   "dependencies": {
