@@ -5,6 +5,10 @@
 - Node.js
 - yarn
 
+## Environment
+`.env.example`을 참고하여 환경변수를 설정해주세요. <br />
+환경변수가 없다면 Script가 동작하지 않습니다.
+
 ## Run
 ```shell
 $ yarn
