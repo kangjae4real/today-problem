@@ -11,14 +11,21 @@
     "dev": "nodemon -c ./nodemon.json"
   },
   "dependencies": {
+    "@octokit/core": "^6.0.1",
     "axios": "^1.6.7",
-    "nodemon": "^3.1.0",
-    "ts-node": "^10.9.2"
+    "dotenv": "^16.4.5",
+    "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@octokit/types": "^12.6.0",
+    "@swc/core": "^1.4.4",
+    "@swc/helpers": "^0.5.6",
     "@types/node": "^20.11.24",
     "@types/nodemon": "^1.19.6",
+    "nodemon": "^3.1.0",
     "prettier": "^3.2.5",
-    "typescript": "^5.3.3"
+    "regenerator-runtime": "^0.14.1",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0"
   }
 }

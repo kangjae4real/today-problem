@@ -8,16 +8,21 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "baseUrl": ".",
+    "typeRoots": ["node_modules/@types", "./**/*", "./src/types/**/*"],
     "rootDir": ".",
-    "module": "esnext",
-    "target": "ES5",
+    "module": "ESNext",
+    "target": "ESNext",
     "sourceMap": true,
     "experimentalDecorators": true,
-    "outDir": "./.build",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    "outDir": "./.build"
   },
   "include": ["./src/**/*.ts"],
-  "exclude": ["node_modules", ".build"]
+  "exclude": ["node_modules", ".build"],
+  "ts-node": {
+    "swc": true,
+    "esm": true,
+    "experimentalSpecifierResolution": "node",
+    "require": ["tsconfig-paths/register"]
+  }
 }

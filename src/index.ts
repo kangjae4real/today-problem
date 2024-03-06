@@ -1,7 +1,3 @@
-import Axios from "axios";
-
-const axios = Axios.create({
-  baseURL: "",
-});
+import { request } from "./client/octokit";
 
 console.log("Hello, World!");
