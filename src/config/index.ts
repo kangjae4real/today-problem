@@ -10,6 +10,10 @@ export interface Environment {
   MESSAGE?: string;
   NAME?: string;
   EMAIL?: string;
+  TITLE?: string;
+  DESCRIPTION?: string;
+  LINK_TITLE?: string;
+  LINK?: string;
 }
 
 const env: Environment = process.env;

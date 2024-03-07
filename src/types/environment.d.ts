@@ -10,6 +10,10 @@ declare global {
       MESSAGE?: string;
       NAME?: string;
       EMAIL?: string;
+      TITLE?: string;
+      DESCRIPTION?: string;
+      LINK_TITLE?: string;
+      LINK?: string;
     }
   }
 }

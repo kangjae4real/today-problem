@@ -2,9 +2,9 @@ import { request } from "./client/octokit";
 import { encodeUnicode } from "./utils/unicode";
 import { makeContent } from "./utils/make-content";
 
-const { OWNER, REPO, TARGET_PATH, MESSAGE, NAME, EMAIL } = process.env;
+const { OWNER, REPO, TARGET_PATH, MESSAGE, NAME, EMAIL, TITLE, DESCRIPTION, LINK_TITLE, LINK } = process.env;
 
-if (!OWNER || !REPO || !TARGET_PATH || !MESSAGE || !NAME || !EMAIL) {
+if (!OWNER || !REPO || !TARGET_PATH || !MESSAGE || !NAME || !EMAIL || !TITLE || !DESCRIPTION || !LINK_TITLE || !LINK) {
   console.log("Environment variable is missing. Please check .env");
   process.exit(1);
 }
@@ -47,7 +47,7 @@ let encodeReadme: string;
 try {
   console.log("Encode README.md...");
   encodeReadme = encodeUnicode(
-    makeContent(readme, { title: "해시", description: "해시문제", link: "https://www.naver.com" }),
+    makeContent(readme, { title: TITLE, description: DESCRIPTION, linkTitle: LINK_TITLE, link: LINK }),
   );
 } catch (error: unknown) {
   throw new Error("Encode Failed.");
