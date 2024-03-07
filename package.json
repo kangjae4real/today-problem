@@ -1,7 +1,6 @@
 {
   "name": "today-problem",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
   "repository": "git@github.com:kangjae4real/today-problem.git",
   "author": "Kangjae Choi <awpe89@gmail.com>",
