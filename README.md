@@ -14,3 +14,6 @@
 $ yarn
 $ yarn start
 ```
+
+## Result
+![Result](./docs/result.png)
